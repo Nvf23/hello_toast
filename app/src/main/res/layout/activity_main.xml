@@ -1,41 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     android:padding="16dp">
 
     <TextView
         android:id="@+id/text_toast_label"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:background="#3949AB"
+        android:padding="8dp"
         android:text="TOAST"
         android:textColor="#FFFFFF"
-        android:gravity="center"
-        android:padding="8dp"
-        android:layout_marginBottom="16dp"
-        android:textSize="18sp"/>
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/text_count"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_width="166dp"
+        android:layout_height="352dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="135dp"
+        android:background="#FFEB3B"
         android:gravity="center"
         android:text="0"
         android:textColor="#3949AB"
-        android:background="#FFEB3B"
-        android:textSize="80sp"/>
+        android:textSize="80sp" />
 
     <Button
         android:id="@+id/button_count"
-        android:layout_width="match_parent"
+        android:layout_width="74dp"
         android:layout_height="wrap_content"
-        android:text="COUNT"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
         android:backgroundTint="#3949AB"
-        android:textColor="#FFFFFF"
-        android:padding="8dp"/>
+        android:padding="8dp"
+        android:text="COUNT"
+        android:textColor="#FFFFFF" />
 
-</LinearLayout>
+</RelativeLayout>
